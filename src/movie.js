@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import Cast from './cast';
 
 class Movie extends Component {
   render() {
@@ -14,7 +14,7 @@ class Movie extends Component {
         {this.props.movie.description}
         </p>
         <div> <strong>Director: {this.props.movie.director}</strong></div>
-       
+      
       </div>
     );
   }

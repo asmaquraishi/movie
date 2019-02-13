@@ -3,14 +3,20 @@ import React, { Component } from 'react';
 
 class Cast extends Component {
   render() {
+    const castobject = this.props.castmembers.cast.map(obj=>{
+      return <div>
+        
+        
+      <li>  <strong>Name:</strong> {obj.name}</li>
+    
+         <strong>Role:</strong> {obj.role}
+  
+
+            </div>
+    })
     return (
       <div>
-
-        <div>{this.props.castmembers.cast[0].name}
-       
-        </div>
-        
-        <h2>{this.props.castmembers.cast[0].role}</h2>
+        <ul>{castobject}</ul>
       </div>
     );
   }
